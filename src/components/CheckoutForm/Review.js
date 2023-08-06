@@ -10,7 +10,7 @@ const Review = ({cart}) => {
                     cart.items.map((item)=>(
                         <li className='d-flex justify-content-between ' key={item.name}>
                             <h6>{item.name} <span className='text-danger'>x{item.quantity}</span></h6>
-                            <p className='font-weight-bold'>${item.totalItemPrice}</p>
+                            <p className='font-weight-bold'>${item.totalItemPrice.toFixed(2)}</p>
                         </li>
                     ))
                 }
