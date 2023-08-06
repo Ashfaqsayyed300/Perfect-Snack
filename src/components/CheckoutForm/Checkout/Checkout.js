@@ -57,7 +57,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
             Order Id: {order.payment.payment_id}
           </p>
         <button type="button" className="btn btn-primary">
-          <a href="/" className="text-light">Back to Home</a>
+          <Link to="/" className="text-light">Back to Home</Link>
         </button>
       </div>
     ) : (
@@ -69,7 +69,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     <div className="text-center">
       <h5>Error: {error}</h5>
       <button className="btn btn-light" type="button">
-        <a href="/">Back to Home</a>
+        <Link to="/">Back to Home</Link>
       </button>
     </div>;
   }
